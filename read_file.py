@@ -1,6 +1,20 @@
 
+links = ["alpha", "#kappa", "beta", "gamma"]
+index = 0
+for link in links:
+	print("processing %s",  link)
+	
+	if link.startswith('#'):
+		index += 1
+		continue;
+		
+	#process(link)
+	processed = True
+	if processed :
+		links[index] ="## " + links[index]
+	
+	index += 1
 
-in_file = open('test.txt')
-for line in in_file:
-	print("Processing %s", line)
+print(links)
+
 	

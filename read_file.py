@@ -6,7 +6,7 @@ links = ["alpha", "#kappa", "beta", "gamma"]
 index = 0
 
 for link in links:
-	print("processing %s",  link)
+	print("processing %s" % (link))
 	
 	if link.startswith('#'):
 		index += 1
@@ -17,6 +17,4 @@ for link in links:
 	
 	index += 1
 
-print(links)
-
-	
+print(links)	

@@ -1,6 +1,10 @@
 
+def process(url):
+	return True
+
 links = ["alpha", "#kappa", "beta", "gamma"]
 index = 0
+
 for link in links:
 	print("processing %s",  link)
 	
@@ -8,9 +12,7 @@ for link in links:
 		index += 1
 		continue;
 		
-	#process(link)
-	processed = True
-	if processed :
+	if process(link):
 		links[index] ="## " + links[index]
 	
 	index += 1
